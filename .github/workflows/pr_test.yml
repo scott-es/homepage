@@ -26,4 +26,5 @@ jobs:
       uses: endorlabs/github-action@v1.1.2
       with:
         namespace: 'scott-learn'
+        enable_github_action_token: false
        
