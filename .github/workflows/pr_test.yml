@@ -26,8 +26,7 @@ jobs:
       uses: endorlabs/github-action@v1.1.2
       with:
         namespace: 'scott-learn'
-        scan_dependencies: true
-        scan_secrets: true
-        pr: true
-        enable_pr_comments: true
-        github_token: ${{ secrets.GITHUB_TOKEN }} # Required for PR comments on new policy violations
+        api_key: ${{ secrets.ENDOR_API_CREDENTIALS_KEY }}
+        api_secret: ${{ secrets.ENDOR_API_CREDENTIALS_SECRET }}
+        enable_github_action_token: false
+       
